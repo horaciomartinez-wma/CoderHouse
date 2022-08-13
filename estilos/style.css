@@ -19,10 +19,16 @@ h3 {
 }
 
 header {
-	background-color: rgb(29, 30, 33);
+	/*background-color: rgb(29, 30, 33);*/
+
+	/*5TO DESAFIO: APLICAR GRADIENTES Y TRANSFORMACIONES*/
+	background: rgb(9, 9, 121);
+	background: linear-gradient(90deg, rgba(9, 9, 121, 1) 68%, rgba(2, 0, 36, 1) 69%, rgba(0, 212, 255, 1) 100%);
 	margin: 5px 5px 30px 5px;
 	padding: 15px 5px 10px 20px;
 	align-items: center;
+	transform: rotateY(360deg);
+	transition: 2s;
 }
 
 .gridHeader {
@@ -36,6 +42,8 @@ header img {
 }
 
 .gridNav {
+	/*5TO DESAFIO: ANIMACION*/
+	animation: bounce 2s ease 0s 1 normal forwards;
 	grid-area: nav;
 }
 
@@ -44,6 +52,60 @@ nav li {
 	padding: 10px;
 	margin: 5px 5px 10px 5px;
 	border: solid 1px black;
+	transition: 0.3s;
+}
+
+/*5to Desafio Transforamciones*/
+nav li:hover {
+	background-color: black;
+	color: white;
+	font-size: 120%;
+}
+
+@keyframes bounce {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 
 a {
@@ -73,10 +135,10 @@ article {
 	grid-template-columns: auto auto;
 	grid-template-rows: 3fr 1fr 4fr 1fr;
 	grid-template-areas:
-		"header header"
-		"nav nav"
-		"article article"
-		"footer footer";
+		'header header'
+		'nav nav'
+		'article article'
+		'footer footer';
 }
 
 .gridForm {
@@ -104,10 +166,10 @@ article {
 		grid-template-columns: auto;
 		grid-template-rows: 3fr 3fr 3fr 1fr;
 		grid-template-areas:
-			"header"
-			"nav"
-			"article"
-			"footer";
+			'header'
+			'nav'
+			'article'
+			'footer';
 	}
 	.gridForm {
 		display: flex;
@@ -119,9 +181,9 @@ article {
 		grid-template-columns: auto;
 		grid-template-rows: 3fr 3fr 3fr 1fr;
 		grid-template-areas:
-			"header"
-			"nav"
-			"form"
-			"footer";
+			'header'
+			'nav'
+			'form'
+			'footer';
 	}
 }
