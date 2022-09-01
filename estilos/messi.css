@@ -1,3 +1,44 @@
+/*SSAS II Uso de variables*/
+@media only screen and (max-width: 550px) {
+  nav li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .gridArticle {
+    display: flex;
+    flex-direction: column;
+    grid-area: article;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 3fr 3fr 3fr 1fr;
+    grid-template-areas: "header" "nav" "article" "footer";
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .gridForm {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .gridContainer-form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 3fr 3fr 3fr 1fr;
+    grid-template-areas: "header" "nav" "form" "footer";
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -177,34 +218,17 @@ article {
   grid-area: form;
 }
 
+/*SSAS II Uso de mixin*/
+/*SSAS II Uso de extend*/
+.redesSociales-face, .redesSociales-tube {
+  height: 30px;
+  width: 30px;
+  background-color: aqua;
+}
+
 @media only screen and (max-width: 550px) {
   header img {
     height: 200px;
     width: auto;
-  }
-  nav li {
-    display: flex;
-    flex-direction: column;
-  }
-  .gridArticle {
-    display: flex;
-    flex-direction: column;
-    grid-area: article;
-  }
-  .gridContainer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 3fr 3fr 3fr 1fr;
-    grid-template-areas: "header" "nav" "article" "footer";
-  }
-  .gridForm {
-    display: flex;
-    flex-direction: column;
-  }
-  .gridContainer-form {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 3fr 3fr 3fr 1fr;
-    grid-template-areas: "header" "nav" "form" "footer";
   }
 }/*# sourceMappingURL=messi.css.map */
