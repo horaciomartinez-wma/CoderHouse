@@ -1,13 +1,20 @@
+/*SSAS II Uso de variables*/
+$htmlFontSize: 62.5%;
+$h3FontSize: 2rem;
+$articleFontSize: 2rem;
+
+@import "./media";
+
 * {
 	margin: 0;
 	padding: 0;
 }
 html {
-	font-size: 62.5%;
+	font-size: $htmlFontSize;
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: $h3FontSize;
 	color: black;
 	text-align: center;
 }
@@ -120,7 +127,7 @@ article {
 	border: solid 1px black;
 	margin: 5px 5px 10px 5px;
 	padding: 10px;
-	font-size: 2rem;
+	font-size: $articleFontSize;
 	text-align: center;
 }
 
@@ -133,55 +140,36 @@ article {
 	grid-template-columns: auto auto;
 	grid-template-rows: 3fr 1fr 4fr 1fr;
 	grid-template-areas:
-		'header header'
-		'nav nav'
-		'article article'
-		'footer footer';
+		"header header"
+		"nav nav"
+		"article article"
+		"footer footer";
 }
 
 .gridForm {
 	grid-area: form;
 }
 
+/*SSAS II Uso de mixin*/
+
+@mixin img_square($size) {
+	height: $size;
+	width: $size;
+}
+
+/*SSAS II Uso de extend*/
+.redesSociales-face {
+	@include img_square(30px);
+	background-color: aqua;
+}
+
+.redesSociales-tube {
+	@extend .redesSociales-face;
+}
+
 @media only screen and (max-width: 550px) {
 	header img {
 		height: 200px;
 		width: auto;
-	}
-
-	nav li {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.gridArticle {
-		display: flex;
-		flex-direction: column;
-		grid-area: article;
-	}
-	.gridContainer {
-		display: grid;
-		grid-template-columns: auto;
-		grid-template-rows: 3fr 3fr 3fr 1fr;
-		grid-template-areas:
-			'header'
-			'nav'
-			'article'
-			'footer';
-	}
-	.gridForm {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.gridContainer-form {
-		display: grid;
-		grid-template-columns: auto;
-		grid-template-rows: 3fr 3fr 3fr 1fr;
-		grid-template-areas:
-			'header'
-			'nav'
-			'form'
-			'footer';
 	}
 }
