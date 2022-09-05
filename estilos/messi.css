@@ -1,6 +1,6 @@
 /*SSAS II Uso de variables*/
 @media only screen and (max-width: 550px) {
-  nav li {
+  nav ul {
     display: flex;
     flex-direction: column;
   }
@@ -10,7 +10,12 @@
   .gridArticle {
     display: flex;
     flex-direction: column;
-    grid-area: article;
+  }
+}
+@media only screen and (min-width: 551px) {
+  .gridArticle {
+    display: flex;
+    flex-direction: row;
   }
 }
 
