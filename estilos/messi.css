@@ -201,8 +201,8 @@ a {
 .gridArticle {
   display: flex;
   flex-direction: row;
-  grid-area: article;
   justify-content: space-evenly;
+  grid-area: article;
 }
 
 article {
