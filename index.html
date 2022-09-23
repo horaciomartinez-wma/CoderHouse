@@ -10,6 +10,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Donde Comer Aguascalientes</title>
+		<!--icon -->
+		<link rel="icon" type="image/x-icon" href="./imagenes/favicon.png">
+			
 		<!--BootStrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -17,6 +20,7 @@
 			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
 			crossorigin="anonymous"
 		/>
+		
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
@@ -27,65 +31,140 @@
 		<link rel="stylesheet" href="./estilos/messi.css" />
 	</head>
 
-	<header class="gridHeader">
-		<h1>Donde Comer</h1>
-		<img
-			src="./imagenes/surtido-de-comida-rápida-y-vista-superior-doble-borde-lateral-en-un-fondo-banner-madera-oscura-variedad-alimentos-para-consumo-o-184617291.jpeg"
-			alt=""
-		/>
-	</header>
-
-	<div class="container">
-		<nav class="navbar-toggler gridNav">
-			<ul class="nav">
-				<li>
-					<a href="./index.html">Inicio</a>
-				</li>
-				<li>
-					<a href="./paginas/nosotros.html">Nosotros</a>
-				</li>
-				<li>
-					<a href="./paginas/restaurantes.html">Restaurantes</a>
-				</li>
-				<li>
-					<a href="./paginas/tiposgastronomia.html">Tipos de Gastronomía</a>
-				</li>
-				<li>
-					<a href="./paginas/fonditas.html">Fonditas</a>
-				</li>
-				<li>
-					<a href="./paginas/panaderias.html">Panaderias y Pastelerias</a>
-				</li>
-				<li>
-					<a href="./paginas/platillos.html">Platillos</a>
-				</li>
-				<li>
-					<a href="./paginas/Contactenos.html">Contactenos</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
+<header class="gridHeader">
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<h1>Donde Comer</h1>
+			<a class="navbar-brand" href="#"></a>
+				<img class="DondeComerLogo" src="./imagenes/favicon.png" alt="DondeComer" width="100" >
+					<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./paginas/restaurantes.html">Restaurantes</a>
+						</li>				
+						<li class="nav-item">
+							<a class="nav-link" href="./paginas/fonditas.html">Cocinas Economicas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./paginas/panaderias.html">Panaderias y Pastelerias</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./paginas/Contactenos.html">Contactenos</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>	
+</header>
 
 	<body>
 		<br />
 		<h3>Eventos y Noticias</h3>
+		<div class="row">
+			<!-- Carrusel - Inicio -->
+			<div class="col-xl-10">
+				<div id="carouselLosArcosInterval" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="10000">
+							<div class="card">
+								<img class="card-img-top" src="./imagenes/ruta-del-vino-aguascalientes.jpeg" alt="Card image cap" />
+								<div class="card-block">
+									<h4 class="card-title">Fiestas De La Vendimia De La Ruta Del Vino Aguascalientes</h4>
+									<p class="card-text">
+										Te invitamos a vivir las Fiestas de la Vendimia de la Ruta Del Vino en Aguascalientes, rodéate de maravillosos paisajes y entretenidas actividades guiadas por expertos, mientras disfrutas de los deliciosos vinos hidrocálidos.
+									</p>
+									<a href="https://restaurantlosarcos.com/aguascalientes/" class="btn btn-primary">Ir al sitio</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="10000">
+							<div class="card">
+								<img class="card-img-top" src="./imagenes/eventos_2.jpeg" alt="Card image cap" />
+								<div class="card-block">
+									<h4 class="card-title">Tlayudalia</h4>
+									<p class="card-text">
+										¡Los lunes también son de #Tlayudalia!
+										Te esperamos de 2 a 11 pm
+										No te puedes perder nuestro asador con los sabores inigualables de Oaxaca.
+									</p>
 
-		<article class="col-md-12 col-xs-6 container gridArticle">
-			<p class="lead">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tenetur vero debitis accusamus ex similique minus
-				quisquam. Facere adipisci itaque animi, iste quibusdam et hic mollitia officiis dicta eaque eius.
-			</p>
-			<iframe
-				width="560"
-				height="315"
-				src="https://www.youtube.com/embed/ARXnmO9wGww"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen
-			></iframe>
-		</article>
+									<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ftlayudalia&h=AT0zZVPIe8J89GEBrtMUaHPf5x6WQCZ8CUYt-lWvpsAdDtOkdpeC4LzGfdvlyPgQAmAdI7wYGKVIoAcOtxiOEpkr5ep5s0vE_N_zCf-24Rfd4drsKmjy5J2KyWxT5oSHs3PX_NA7RikcxQ9Mmr1V7mrfoa4" class="btn btn-primary">Ir al sitio</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="10000">
+							<div class="card">
+								<img class="card-img-top" src="./imagenes/eventos_3.jpeg" alt="Card image cap" />
+								<div class="card-block">
+									<h4 class="card-title">CerveceriaNo.18</h4>
+									<p class="card-text">Amigos, los esperamos el sábado 01 y domingo 02 de octubre en Berlinhaus Restaurante. Vamos a participar en el Oktobeer Fest 2022 en Aguascalientes.</p>
+									<a href="https://www.facebook.com/BerlinhausPunto45" class="btn btn-primary">Ir al sitio</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="10000">
+							<div class="card">
+								<img class="card-img-top" src="./imagenes/eventos_4.jpeg" alt="Card image cap" /> 
+								<div class="card-block">
+									<h4 class="card-title">A 3/4 del Cielo</h4>
+									<p class="card-text">Gracias a tu Preferencia, un año más! De esta Deliciosa Tradición en A 3/4 del Cielo ya por 4to.Año consecutivo y siguiendo la Receta Tradicional y el Toque de la Leña! Con la Calidad y Sazón que nos caracteriza... Te esperamos</p>
+									<a href="https://www.facebook.com/A3CuartosDelCielo" class="btn btn-primary">Ir a Menú</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="10000">
+							<div class="card">
+								<img class="card-img-top" src="./imagenes/eventos_5.jpeg" alt="Card image cap" /> 
+								<div class="card-block">
+									<h4 class="card-title">Burger Fest Ags.</h4>
+									<p class="card-text">Se acerca la gran fecha !!! Estarán participando varios restaurantes de hamburguesas para la votación final. Gana una rifa para 2 personas en la playa</p>
+									<a href="https://www.facebook.com/Burgerfest2022" class="btn btn-primary">Ir al Mapa</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselLosArcosInterval"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselLosArcosInterval"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		
+			<!-- Carrusel- Fin -->
 
+
+		<br />
 		<footer class="gridFooter">
 			<p>2022 © Donde Comer todos los derechos reservados</p>
 			<img class="redesSociales-face" src="./imagenes/facebook.png" alt="" />

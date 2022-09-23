@@ -1,4 +1,4 @@
-nav li {
+nav ul {
 	@media only screen and (max-width: 550px) {
 		display: flex;
 		flex-direction: column;
@@ -9,7 +9,10 @@ nav li {
 	@media only screen and (max-width: 550px) {
 		display: flex;
 		flex-direction: column;
-		grid-area: article;
+	}
+	@media only screen and (min-width: 551px) {
+		display: flex;
+		flex-direction: row;
 	}
 }
 
@@ -19,10 +22,10 @@ nav li {
 		grid-template-columns: auto;
 		grid-template-rows: 3fr 3fr 3fr 1fr;
 		grid-template-areas:
-			'header'
-			'nav'
-			'article'
-			'footer';
+			"header"
+			"nav"
+			"article"
+			"footer";
 	}
 }
 
@@ -39,9 +42,9 @@ nav li {
 		grid-template-columns: auto;
 		grid-template-rows: 3fr 3fr 3fr 1fr;
 		grid-template-areas:
-			'header'
-			'nav'
-			'form'
-			'footer';
+			"header"
+			"nav"
+			"form"
+			"footer";
 	}
 }

@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*SSAS II Uso de variables*/
 @media only screen and (max-width: 550px) {
-  nav li {
+  nav ul {
     display: flex;
     flex-direction: column;
   }
@@ -10,7 +11,12 @@
   .gridArticle {
     display: flex;
     flex-direction: column;
-    grid-area: article;
+  }
+}
+@media only screen and (min-width: 551px) {
+  .gridArticle {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -54,28 +60,6 @@ h3 {
   text-align: center;
 }
 
-header {
-  /*background-color: rgb(29, 30, 33);*/
-  /*5TO DESAFIO: APLICAR GRADIENTES Y TRANSFORMACIONES*/
-  background: rgb(9, 9, 121);
-  background: linear-gradient(90deg, rgb(9, 9, 121) 68%, rgb(2, 0, 36) 69%, rgb(0, 212, 255) 100%);
-  margin: 5px 5px 30px 5px;
-  padding: 15px 5px 10px 20px;
-  align-items: center;
-  transform: rotateY(360deg);
-  transition: 2s;
-}
-header h1 {
-  font-size: 4rem;
-  color: beige;
-  text-align: center;
-}
-header img {
-  border: solid 1px white;
-  height: 500px;
-  width: 98%;
-}
-
 .gridHeader {
   grid-area: header;
 }
@@ -87,17 +71,33 @@ header img {
   grid-area: nav;
 }
 
-nav li {
-  display: inline;
-  padding: 10px;
-  margin: 5px 5px 10px 5px;
-  border: solid 1px black;
-  transition: 0.3s;
+.navbar {
+  background-image: url("../imagenes/surtido-de-comida-rápida-y-vista-superior-doble-borde-lateral-en-un-fondo-banner-madera-oscura-variedad-alimentos-para-consumo-o-184617291.jpeg");
 }
-nav li:hover {
-  background-color: black;
-  color: white;
-  font-size: 120%;
+
+nav h1 {
+  font-size: 4rem;
+  color: beige;
+}
+nav .navbar-nav {
+  text-align: end !important;
+}
+nav .navbar-nav li a {
+  font-size: large;
+  /*Cambiando el color del Nav Solo con Important se sobreescribre el valor de Bootstrap*/
+  color: white !important;
+}
+
+.container-fluid {
+  flex-direction: column;
+}
+
+.navbar-toggler {
+  background-color: lightgray;
+}
+
+.DondeComerLogo {
+  border-radius: 50%;
 }
 
 @-webkit-keyframes bounce {
@@ -216,6 +216,37 @@ article {
 
 .gridForm {
   grid-area: form;
+}
+
+.cards-wrapper {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*SSAS II Uso de mixin*/
