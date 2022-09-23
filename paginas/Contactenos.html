@@ -30,49 +30,9 @@
 	</head>
 
 	<header class="gridHeader">
-		<h1>Donde Comer</h1>
-
-		<img
-			src="../imagenes/surtido-de-comida-rápida-y-vista-superior-doble-borde-lateral-en-un-fondo-banner-madera-oscura-variedad-alimentos-para-consumo-o-184617291.jpeg"
-			alt=""
-		/>
-	</header>
-	<!-- 
-	<div class="container">
-		<nav class="navbar-toggler gridNav">
-			<ul class="nav">
-				<li>
-					<a href="../index.html">Inicio</a>
-				</li>
-				<li>
-					<a href="./nosotros.html">Nosotros</a>
-				</li>
-				<li>
-					<a href="./restaurantes.html">Restaurantes</a>
-				</li>
-				<li>
-					<a href="./tiposgastronomia.html">Tipos de Gastronomía</a>
-				</li>
-				<li>
-					<a href="./fonditas.html">Fonditas</a>
-				</li>
-				<li>
-					<a href="./panaderias.html">Panaderias y Pastelerias</a>
-				</li>
-				<li>
-					<a href="./platillos.html">Platillos</a>
-				</li>
-				<li>
-					<a href="./Contactenos.html">Contactenos</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	 -->
-
-	<body>
 		<nav class="navbar navbar-expand-lg bg-light">
 			<div class="container-fluid">
+				<h1>Donde Comer</h1>
 				<a class="navbar-brand" href="#"></a>
 				<img class="DondeComerLogo" src="../imagenes/favicon.png" alt="DondeComer" width="100" />
 				<button
@@ -91,7 +51,9 @@
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
 						</li>
-
+						<li class="nav-item">
+							<a class="nav-link" href="../paginas/restaurantes.html">Restaurantes</a>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="../paginas/fonditas.html">Cocinas Economicas</a>
 						</li>
@@ -108,7 +70,9 @@
 				</div>
 			</div>
 		</nav>
+	</header>
 
+	<body>
 		<br />
 		<h3>Dejanos tus comentarios o si te interesa anunciarte con nosotros</h3>
 		<br />
@@ -117,7 +81,13 @@
 				<div class="form-group">
 					<br />
 					<label for="Email">Email</label>
-					<input type="email" class="form-control" name="Email" placeholder="Ingrese su email" />
+					<input
+						style="width: 300px; padding: 0"
+						type="email"
+						class="form-control"
+						name="Email"
+						placeholder="Ingrese su email"
+					/>
 				</div>
 				<div>
 					<br />
@@ -127,14 +97,23 @@
 				<br />
 				<label for="descAnuncio">Descripcion de tu anuncio</label>
 				<br />
-				<textarea name="descAnuncio" cols="40" rows="5" placeholder="Ingrese su email"> </textarea>
+				<textarea
+					name="descAnuncio"
+					style="width: 300px; padding: 0"
+					cols="40"
+					rows="5"
+					placeholder="Descripcion del Anuncio"
+				>
+				</textarea>
 				<br />
 				<button type="submit" class="btn btn-default">Enviar</button>
 			</form>
 		</div>
-
-		<footer>
+		<br />
+		<footer class="gridFooter">
 			<p>2022 © Donde Comer todos los derechos reservados</p>
+			<img class="redesSociales-face" src="../imagenes/facebook.png" alt="" />
+			<img class="redesSociales-tube" src="../imagenes/YouTube.png" alt="" />
 		</footer>
 	</body>
 </html>

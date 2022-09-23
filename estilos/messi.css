@@ -60,28 +60,6 @@ h3 {
   text-align: center;
 }
 
-header {
-  /*background-color: rgb(29, 30, 33);*/
-  /*5TO DESAFIO: APLICAR GRADIENTES Y TRANSFORMACIONES*/
-  background: rgb(9, 9, 121);
-  background: linear-gradient(90deg, rgb(9, 9, 121) 68%, rgb(2, 0, 36) 69%, rgb(0, 212, 255) 100%);
-  margin: 5px 5px 30px 5px;
-  padding: 15px 5px 10px 20px;
-  align-items: center;
-  transform: rotateY(360deg);
-  transition: 2s;
-}
-header h1 {
-  font-size: 4rem;
-  color: beige;
-  text-align: center;
-}
-header img {
-  border: solid 1px white;
-  height: 500px;
-  width: 98%;
-}
-
 .gridHeader {
   grid-area: header;
 }
@@ -97,7 +75,6 @@ header img {
   background-image: url("../imagenes/surtido-de-comida-rápida-y-vista-superior-doble-borde-lateral-en-un-fondo-banner-madera-oscura-variedad-alimentos-para-consumo-o-184617291.jpeg");
 }
 
-/*Cambiando el color del Nav Solo con Important se sobreescribre el valor de Bootstrap*/
 nav h1 {
   font-size: 4rem;
   color: beige;
@@ -107,6 +84,7 @@ nav .navbar-nav {
 }
 nav .navbar-nav li a {
   font-size: large;
+  /*Cambiando el color del Nav Solo con Important se sobreescribre el valor de Bootstrap*/
   color: white !important;
 }
 
@@ -118,22 +96,6 @@ nav .navbar-nav li a {
   background-color: lightgray;
 }
 
-/*
-nav {
-	li {
-		display: inline;
-		padding: 10px;
-		margin: 5px 5px 10px 5px;
-		border: solid 1px black;
-		transition: 0.3s;
-	}
-	li:hover {
-		background-color: black;
-		color: white;
-		font-size: 120%;
-	}
-}
-*/
 .DondeComerLogo {
   border-radius: 50%;
 }
