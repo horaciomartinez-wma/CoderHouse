@@ -1,50 +1,81 @@
 @charset "UTF-8";
 /*SSAS II Uso de variables*/
-@media only screen and (max-width: 550px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 600px) {
+  .card-img-top {
+    width: 40%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 728px) {
+  .card-img-top {
+    width: 60%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 940px) {
+  .card-img-top {
+    width: 70%;
+    height: auto;
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .gridArticle {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media only screen and (min-width: 551px) {
-  .gridArticle {
-    display: flex;
-    flex-direction: row;
-  }
+/*
+nav ul {
+	@media only screen and (max-width: 550px) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
-@media only screen and (max-width: 550px) {
-  .gridContainer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 3fr 3fr 3fr 1fr;
-    grid-template-areas: "header" "nav" "article" "footer";
-  }
+.gridArticle {
+	@media only screen and (max-width: 550px) {
+		display: flex;
+		flex-direction: column;
+	}
+	@media only screen and (min-width: 551px) {
+		display: flex;
+		flex-direction: row;
+	}
 }
 
-@media only screen and (max-width: 550px) {
-  .gridForm {
-    display: flex;
-    flex-direction: column;
-  }
+
+.gridContainer {
+	@media only screen and (max-width: 550px) {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 3fr 3fr 3fr 1fr;
+		grid-template-areas:
+			"header"
+			"nav"
+			"article"
+			"footer";
+	}
 }
 
-@media only screen and (max-width: 550px) {
-  .gridContainer-form {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 3fr 3fr 3fr 1fr;
-    grid-template-areas: "header" "nav" "form" "footer";
-  }
+.gridForm {
+	@media only screen and (max-width: 550px) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
+.gridContainer-form {
+	@media only screen and (max-width: 550px) {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 3fr 3fr 3fr 1fr;
+		grid-template-areas:
+			"header"
+			"nav"
+			"form"
+			"footer";
+	}
+}
+*/
 * {
   margin: 0;
   padding: 0;
