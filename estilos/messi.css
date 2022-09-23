@@ -88,6 +88,15 @@ nav .navbar-nav li a {
   color: white !important;
 }
 
+.card-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
 .container-fluid {
   flex-direction: column;
 }
@@ -193,6 +202,7 @@ a {
   display: flex;
   flex-direction: row;
   grid-area: article;
+  justify-content: space-evenly;
 }
 
 article {
@@ -209,9 +219,9 @@ article {
 
 .gridContainer {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 3fr 1fr 4fr 1fr;
-  grid-template-areas: "header header" "nav nav" "article article" "footer footer";
+  grid-template-columns: auto;
+  grid-template-rows: 3fr 5fr 1fr;
+  grid-template-areas: "header" "article" "footer";
 }
 
 .gridForm {
